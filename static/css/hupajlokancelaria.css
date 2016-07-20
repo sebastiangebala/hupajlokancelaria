@@ -49,3 +49,129 @@ background-size: 100% 100%;
 border-radius: 7pt;
 }
 
+
+
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 300;
+  line-height: 34px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+
+/* Sidebar
+-----------------------------------------------------------------------------------------*/
+.menusign {
+  display: block;
+  width: 10px;
+  line-height: .3;
+  font-size: 2em;
+  margin: .5em;
+}
+.menusign br {
+  height: 0;
+}
+
+.sidebar {
+  position: fixed;
+  z-index: 9999999;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 260px;
+  background: #F0F2F2;
+  -webkit-transition: left 0.3s ease, -webkit-box-shadow 0.3s ease 0.2s;
+  transition: left 0.3s ease, box-shadow 0.3s ease 0.2s;
+  -webkit-box-shadow: 0.5em 0 0 0 #4E5354, 0.6em 0 0 0 #4E5354;
+  box-shadow: 0.5em 0 0 0 #4E5354, 0.6em 0 0 0 #4E5354;
+}
+.sidebar #close {
+  float: right;
+  margin: -5.5rem 1rem;
+  font-size: 1.4em;
+  color: #050505;
+  text-align: right;
+}
+.sidebar.closed {
+  left: -260px;
+  -webkit-box-shadow: 0 0 0 #050505;
+  box-shadow: 0 0 0 #050505;
+}
+.sidebar h2 {
+  padding: .5em;
+  color: #050505;
+}
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+}
+.sidebar ul li {
+  width: 90%;
+  margin: 5px 10px;
+  float: left;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 3px 6px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 2px solid #050505;
+  background: #727678;
+  color: #727678;
+}
+.sidebar ul li a {
+  color: white;
+}
+.sidebar ul li:hover {
+  background: #363838;
+  border-color: #363838;
+}
+
+/* Blurred class
+
+This class is added to the container 
+(#blurMe) when the sidebar is open.
+-----------------------------------*/
+.blurred {
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+  -webkit-filter: url(#blur);
+  filter: url(#blur);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='10');
+}
+
+#trigger {
+font-size: 25px;
+color: #414647;
+position: fixed;
+z-index: 100;
+right: 5px;
+}
+
+
