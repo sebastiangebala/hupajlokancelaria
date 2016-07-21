@@ -11,8 +11,15 @@ min-height: 100px;
 text-align: center;
 position: fixed;
 z-index: 99;
-background: rgb(204, 204, 204);
-background: rgba(204, 204, 204, 1);
+background: #C2662D;
+top: 0;
+border-bottom: 3px solid #694935;
+}
+nav h3 {
+color: black;
+}
+nav a {
+color: black;
 }
 .div-catcher {
 min-height: 300px;
@@ -20,8 +27,7 @@ margin-bottom: 15px;
 }
 footer {
 min-height: 100px;
-border: 1px solid grey;
-border-radius: 7pt;
+border-top: 3px solid #694935;
 }
 nav a {
 display: inline;
@@ -39,14 +45,11 @@ a:visited {
 color: black;
 text-decoration: none;
 }
-.div-first {
-margin-top: 100px;
-}
 .img-hupajlo {
 height: 400px;
 background-image: url('../img/hupajlo.jpg');
 background-size: 100% 100%;
-border-radius: 7pt;
+border: 3px solid #694935;
 }
 
 
@@ -92,27 +95,27 @@ html, body {
   top: 0;
   height: 100%;
   width: 260px;
-  background: #F0F2F2;
+  background: #BF5900;
   -webkit-transition: left 0.3s ease, -webkit-box-shadow 0.3s ease 0.2s;
   transition: left 0.3s ease, box-shadow 0.3s ease 0.2s;
-  -webkit-box-shadow: 0.5em 0 0 0 #4E5354, 0.6em 0 0 0 #4E5354;
-  box-shadow: 0.5em 0 0 0 #4E5354, 0.6em 0 0 0 #4E5354;
+  -webkit-box-shadow: 0.5em 0 0 0 #69380E, 0.6em 0 0 0 #69380E;
+  box-shadow: 0.5em 0 0 0 #69380E, 0.6em 0 0 0 #69380E;
 }
 .sidebar #close {
   float: right;
   margin: -5.5rem 1rem;
   font-size: 1.4em;
-  color: #050505;
+  color: #69380E;
   text-align: right;
 }
 .sidebar.closed {
   left: -260px;
-  -webkit-box-shadow: 0 0 0 #050505;
-  box-shadow: 0 0 0 #050505;
+  -webkit-box-shadow: 0 0 0 #69380E;
+  box-shadow: 0 0 0 #69380E;
 }
 .sidebar h2 {
   padding: .5em;
-  color: #050505;
+  color: black;
 }
 .sidebar ul {
   padding: 0;
@@ -139,16 +142,16 @@ html, body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border: 2px solid #050505;
-  background: #727678;
-  color: #727678;
+  border: 2px solid #69380E;
+  background: #CC8C54;
+  color: #69380E;
 }
 .sidebar ul li a {
   color: white;
 }
 .sidebar ul li:hover {
-  background: #363838;
-  border-color: #363838;
+  background: #69380E;
+  border-color: #69380E;
 }
 
 /* Blurred class
@@ -167,11 +170,61 @@ This class is added to the container
 }
 
 #trigger {
-font-size: 25px;
-color: #414647;
+color: #69380E;
 position: fixed;
 z-index: 100;
-right: 5px;
+right: 10px;
+top: 5px;
+font-weight: bold;
+font-size: 40px;
 }
 
+/* Scroll to Top */
+.scrollToTop{
+	text-decoration: none;
+	position:fixed;
+	bottom: 40px;
+	right:40px;
+	display:none;
+	font-weight: bold;
+	font-size: 40px;
+}
+i {
+	color: #472201;
+}
+.scrollToTop:hover{
+	text-decoration:none;
+}
+/*parallax scrolling*/
+body, html {
+    height: 100%;
+}
 
+.parallax {
+    /* The image used */
+    background-image: url('../img/parallax.jpg');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wizytowka {
+position: absolute;
+right: 40%;
+top: 40%;
+color: white;
+text-align: center;
+font-weight: bold;
+text-shadow: 2px 2px 2px black;
+}
+.wizytowka i {
+color: white;
+font-weight: bold;
+text-shadow: 2px 2px 2px black;
+}
