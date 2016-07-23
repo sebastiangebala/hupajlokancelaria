@@ -188,6 +188,7 @@ font-size: 40px;
 	display:none;
 	font-weight: bold;
 	font-size: 40px;
+	z-index: 111;
 }
 i {
 	color: #472201;
@@ -196,14 +197,9 @@ i {
 	text-decoration:none;
 }
 /*parallax scrolling*/
-body, html {
-    height: 100%;
-}
-
 .parallax {
     /* The image used */
     background-image: url('../img/parallax.jpg');
-    background-size: 100% 100%;
 
     /* Full height */
     height: 100%; 
@@ -229,3 +225,15 @@ color: white;
 font-weight: bold;
 text-shadow: 2px 2px 2px black;
 }
+.fa-chevron-down {
+color: white;
+text-shadow: 2px 2px 2px black;
+}
+a.button {
+position: absolute;
+right: 50%;
+bottom: 2%;
+font-size: 40px;
+font-weight: bold;
+}
+

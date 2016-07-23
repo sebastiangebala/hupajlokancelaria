@@ -21,7 +21,7 @@ $(document).ready(function() {
     });
 });
 
-// Toggle the blurred class
+// Toggle 
 
 $(document).ready(function(){
 
