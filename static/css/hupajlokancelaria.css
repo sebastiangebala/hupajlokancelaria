@@ -14,6 +14,16 @@ z-index: 99;
 background: #C2662D;
 top: 0;
 border-bottom: 3px solid #694935;
+opacity: 0.9;
+}
+#kirp-img {
+background-image: url('../img/kirp.jpg');
+background-size: 100% 100%;
+position: absolute;
+left: 0;
+top: 25%;
+width: 150px;
+height: 150px;
 }
 nav h3 {
 color: black;
@@ -78,8 +88,7 @@ html, body {
 }
 
 
-/* Sidebar
------------------------------------------------------------------------------------------*/
+/* Sidebar*/
 .menusign {
   display: block;
   width: 10px;
@@ -94,15 +103,14 @@ html, body {
 .sidebar {
   position: fixed;
   z-index: 9999999;
-  left: 0;
-  top: 0;
-  height: 100%;
+  right: 0;
+  top: 50px;
   width: 260px;
   background: #BF5900;
-  -webkit-transition: left 0.3s ease, -webkit-box-shadow 0.3s ease 0.2s;
-  transition: left 0.3s ease, box-shadow 0.3s ease 0.2s;
-  -webkit-box-shadow: 0.5em 0 0 0 #69380E, 0.6em 0 0 0 #69380E;
-  box-shadow: 0.5em 0 0 0 #69380E, 0.6em 0 0 0 #69380E;
+  border: 3px solid #69380E;
+  border-radius: 7pt 0 0 7pt;
+  -webkit-transition: right 0.3s ease, -webkit-box-shadow 0.3s ease 0.2s;
+  transition: right 0.3s ease, box-shadow 0.3s ease 0.2s;
 }
 .sidebar #close {
   float: right;
@@ -112,7 +120,7 @@ html, body {
   text-align: right;
 }
 .sidebar.closed {
-  left: -260px;
+  right: -260px;
   -webkit-box-shadow: 0 0 0 #69380E;
   box-shadow: 0 0 0 #69380E;
 }
@@ -129,7 +137,7 @@ html, body {
   margin: 5px 10px;
   float: left;
   display: inline-block;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   font-weight: 400;
   text-align: center;
   vertical-align: middle;
@@ -155,6 +163,21 @@ html, body {
 .sidebar ul li:hover {
   background: #69380E;
   border-color: #69380E;
+}
+/* Sidebar for Phone and Tablets*/
+@media (max-width: 768px) {
+.sidebar {
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  -webkit-transition: top 0.3s ease, -webkit-box-shadow 0.3s ease 0.2s;
+  transition: top 0.3s ease, box-shadow 0.3s ease 0.2s;
+	}
+.sidebar.closed {
+  right: 0;
+  top: -100%;
+ }
 }
 
 /* Blurred class
