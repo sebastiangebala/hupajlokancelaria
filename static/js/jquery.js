@@ -5,7 +5,7 @@ $(function() {
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: target.offset().top-100
+          scrollTop: target.offset().top-50
         }, 400);
         return false;
       }
@@ -63,5 +63,25 @@ $(document).ready(function(){
 	});
 	
 });
+
+// Shrinking nav
+var pagetop, menu, yPos;
+function yScroll(){
+	pagetop = document.getElementById('pagetop');
+	menu = document.getElementById('menu');
+	yPos = window.pageYOffset;
+	if(yPos > 1){
+		pagetop.style.height = "50px";
+		pagetop.style.paddingTop = "0px";
+		pagetop.style.marginTop = "0px";
+		menu.style.height = "0px";
+	} else {
+		pagetop.style.height = "100px";
+		pagetop.style.paddingTop = "50px";
+		pagetop.style.marginTop = "0px";
+		menu.style.height = "50px";
+	}
+}
+window.addEventListener("scroll", yScroll);
 
 
