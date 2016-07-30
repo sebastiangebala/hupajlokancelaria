@@ -236,9 +236,6 @@ font-size: 40px;
 font-weight: bold;
 }
 /* shrinking nav */
-body{ 
-margin: 0px;
-}
 #kirp {
 background-image: url('../img/kirplogo.png');
 background-size: 100% 100%;
@@ -466,7 +463,7 @@ display: none;
 .parallax {
     /* The image used */
     background-image: url('../img/parallaxphone.jpg');
-    background-size: 100% 100%;
+    background-size: cover;
     }
 .wizytówka-sub {
 display: none;
