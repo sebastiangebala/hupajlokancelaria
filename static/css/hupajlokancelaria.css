@@ -5,60 +5,6 @@ body {
 font-family: 'Open Sans';
 font-size: 15px;
 }
-
-#kirp-img {
-background-image: url('../img/kirplogo.png');
-background-size: 100% 100%;
-position: absolute;
-left: 0;
-top: 0;
-width: 100px;
-height: 99px;
-z-index: 105;
-}
-nav h3 {
-color: black;
-}
-nav a {
-color: black;
-}
-.div-catcher {
-margin-bottom: 15px;
-}
-footer {
-min-height: 100px;
-border-top: 3px solid #694935;
-}
-nav a {
-display: inline;
-color: black;
-}
-a:hover {
-color: black;
-text-decoration: none;
-}
-a:link {
-outline:none;
-text-decoration: none;
-}
-a:visited {
-color: black;
-text-decoration: none;
-}
-.img-hupajlo {
-background-image: url('../img/hupajlo.jpg');
-background-size: 100% 100%;
-height: 400px;
-border: 3px solid #694935;
-}
-@media (max-width: 768px) {
-.div-first {
-margin-top: 100px;
-}
-}
-
-
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -68,7 +14,6 @@ margin-top: 100px;
   font-weight: 300;
   line-height: 34px;
 }
-
 html, body {
   width: 100%;
   height: 100%;
@@ -76,8 +21,40 @@ html, body {
   padding: 0;
   float: left;
 }
-
-
+footer {
+min-height: 100px;
+border-top: 1px solid #E8D297;
+text-align: center;
+color: #E8D297;
+background-image: url('../img/parallaxsection.jpg');
+background-size: 100% 100%;
+}
+.footer-i {
+color: #E8D297;
+}
+nav a {
+display: inline;
+color: black;
+}
+.nav-selection {
+font-weight: bold;
+margin-right: 5px;
+}
+.show-border {
+border-bottom: 3px solid white;
+}
+a:hover {
+color: #E8D297;
+text-decoration: none;
+}
+a:link {
+outline:none;
+text-decoration: none;
+}
+a:visited {
+color: #E8D297;
+text-decoration: none;
+}
 /* Sidebar*/
 .menusign {
   display: block;
@@ -89,15 +66,15 @@ html, body {
 .menusign br {
   height: 0;
 }
-
 .sidebar {
   position: fixed;
   z-index: 9999999;
   right: 0;
   top: 50px;
   width: 260px;
-  background: #BF5900;
-  border: 3px solid #69380E;
+  background-image: url('../img/parallaxslide.jpg');
+  background-size: 100% 100%;
+  border: 3px solid white;
   border-radius: 7pt 0 0 7pt;
   -webkit-transition: right 0.3s ease, -webkit-box-shadow 0.3s ease 0.2s;
   transition: right 0.3s ease, box-shadow 0.3s ease 0.2s;
@@ -106,17 +83,26 @@ html, body {
   float: right;
   margin: -5.5rem 1rem;
   font-size: 1.4em;
-  color: #69380E;
   text-align: right;
 }
 .sidebar.closed {
   right: -260px;
-  -webkit-box-shadow: 0 0 0 #69380E;
-  box-shadow: 0 0 0 #69380E;
 }
-.sidebar h2 {
-  padding: .5em;
-  color: black;
+.sidebar h5 {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 2px black;
+}
+#balance-size {
+	text-align: center;
+  font-size: 25px;
+  text-shadow: 2px 2px 2px black;
+}
+#balance-size i {
+color: white;
+font-weight: bold;
 }
 .sidebar ul {
   padding: 0;
@@ -124,18 +110,16 @@ html, body {
 }
 .sidebar ul li {
   width: 90%;
-  margin: 5px 10px;
+  margin-left: 5%;
+  margin-bottom: 10px;
   float: left;
   display: inline-block;
-  margin-bottom: 10px;
-  font-weight: 400;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
-  padding: 3px 6px;
   font-size: 14px;
   line-height: 1.42857143;
   border-radius: 4px;
@@ -143,31 +127,18 @@ html, body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border: 2px solid #69380E;
-  background: #CC8C54;
-  color: #69380E;
+  border: 2px solid white;
+  background: #021B3D;
+  color: white;
+  box-shadow: 4px 4px 4px black;
 }
 .sidebar ul li a {
-  color: white;
+color: white;
+font-weight: bold;
 }
 .sidebar ul li:hover {
-  background: #69380E;
-  border-color: #69380E;
-}
-/* Sidebar for Phone and Tablets*/
-@media (max-width: 768px) {
-.sidebar {
-  top: 0;
-  height: 100%;
-  width: 100%;
-  border-radius: 0;
-  -webkit-transition: top 0.3s ease, -webkit-box-shadow 0.3s ease 0.2s;
-  transition: top 0.3s ease, box-shadow 0.3s ease 0.2s;
-	}
-.sidebar.closed {
-  right: 0;
-  top: -100%;
- }
+  background: black;
+  border-color: black;
 }
 
 /* Blurred class
@@ -191,10 +162,10 @@ z-index: 104;
 right: 10px;
 top: 5px;
 font-weight: bold;
-font-size: 40px;
+font-size: 35px;
 }
 #trigger i {
-color: white
+color: white;
 }
 
 /* Scroll to Top */
@@ -207,9 +178,10 @@ color: white
 	font-weight: bold;
 	font-size: 40px;
 	z-index: 111;
+	text-shadow: 2px 2px 2px black;
 }
 i {
-	color: #8A430A;
+	color: #C7B37B;
 }
 .scrollToTop:hover{
 	text-decoration:none;
@@ -227,26 +199,34 @@ i {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
-
+.blurwizyt {
+filter: blur(5px);
+}
 .wizytowka {
 position: absolute;
-right: 40%;
-top: 40%;
+left: 15%;
+top: 35%;
 color: white;
 text-align: center;
 font-weight: bold;
-text-shadow: 2px 2px 2px black;
+font-size: 20px;
+text-shadow: 4px 4px 4px black;
 }
 .wizytowka i {
 color: white;
 font-weight: bold;
-text-shadow: 2px 2px 2px black;
+text-shadow: 4px 4px 4px black;
+}
+#social {
+color: white;
+font-weight: bold;
+text-shadow: 4px 4px 4px black;
 }
 .fa-chevron-down {
 color: white;
-text-shadow: 2px 2px 2px black;
+text-shadow: 4px 4px 4px black;
 }
 a.button {
 position: absolute;
@@ -256,21 +236,49 @@ font-size: 40px;
 font-weight: bold;
 }
 /* shrinking nav */
-body{ margin: 0px; text-align: center; }
-#pagetop{
+body{ 
+margin: 0px;
+}
+#kirp {
+background-image: url('../img/kirplogo.png');
+background-size: 100% 100%;
+position: fixed;
+left: 0;
+top: 0;
+width: 100px;
+height: 99px;
+z-index: 105;
+transition: height 0.3s linear 0s, width 0.3s linear 0s;
+}
+#pagetop {
 	position: fixed;
 	top: 0px;
-	margin-top: 0px;
+	padding-left: 100px;
 	width:100%;
 	background: black;
-	color: white;
-	font-size: 23px;
-	padding-top: 50px;
+	padding-top: 0px;
 	height: 100px;
 	transition: height 0.3s linear 0s, padding 0.3s linear 0s;
 	overflow:hidden;
-	z-index: 102;
+	z-index: 103;
 	border-bottom: 1px solid grey;
+}
+#pagetop h3 {
+color: white;
+font-size: 23px;
+float: left;
+}
+#right {
+margin-top: 60px;
+transition: margin 0.3s linear 0s;
+}
+#right a {
+color: white;
+font-size: 15px;
+font-weight: bold;
+float: right;
+display: inline;
+padding-right: 5px;
 }
 #menu{
 	position: absolute;
@@ -278,10 +286,200 @@ body{ margin: 0px; text-align: center; }
 	width:100%;
 	background: black;
 	height: 50px;
-	z-index: 103;
+	z-index: 102;
 	transition: height 0.3s linear 0s;
 	overflow:hidden;
 }
 #menu a {
 	color: white;
+}
+#pagetitle {
+margin-top: 15px;
+font-weight: bold;
+transition: font-size 0.3s linear 0s, margin-left 0.3s linear 0s, margin-top 0.3s linear 0s;
+}
+/*section general*/
+.col-sm-12 {
+padding-left: 0px;
+padding-right: 0px;
+}
+.container {
+padding-left: 0px;
+padding-right: 0px;
+}
+.sectionhead {
+width: 100%;
+}
+.sectiontitle {
+font-weight: bold;
+color: white;
+background-image: url('../img/parallaxsection.jpg');
+background-size: 100% 100%;
+margin-top: 15px;
+border-radius: 0 0 4pt 4pt;
+box-shadow: 2px 2px 2px black;
+}
+.empty {
+border-top: 1px solid #19278C;
+margin-top: 15px;
+box-shadow: 2px 2px 2px black;
+}
+/*section-1*/
+.img-hupajlo {
+position: relative;
+float: left;
+width: 25%;
+border: 1px solid #19278C;
+box-shadow: 4px 4px 4px black;
+margin-right: 15px;
+-webkit-filter: sepia(100%);
+filter: sepia(100%);
+}
+.img-hupajlo i {
+position: relative;
+float: right;
+width: 73%;
+}
+/*section-4*/
+.orlen {
+-webkit-filter: sepia(100%);
+filter: sepia(100%);
+}
+.partnerzy {
+padding: 35px;
+}
+/*section-5*/
+.maps {
+width: 100%;
+border: 1px solid #E8D297;
+box-shadow: 2px 2px 2px black;
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+}
+.contact-div {
+text-align: center;
+border: 1px solid #E8D297;
+background: #E8D297;
+font-weight: bold;
+color: black;
+box-shadow: 2px 2px 2px black;
+}
+.cytat {
+min-height: 150px;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+.contact-div i {
+color: black;
+}
+#social-contact {
+font-weight: bold;
+}
+#social-contact:hover {
+color: black;
+text-decoration: none;
+}
+#social-contact:link {
+outline:none;
+text-decoration: none;
+}
+#social-contact:visited {
+color: black;
+text-decoration: none;
+}
+/*small Desktop*/
+@media (min-width: 768px) and (max-width: 992px) {
+#right {
+display: none;
+}
+}
+/*for Phone and Tablets*/
+@media (max-width: 768px) {
+.sidebar {
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  -webkit-transition: top 0.3s ease, -webkit-box-shadow 0.3s ease 0.2s;
+  transition: top 0.3s ease, box-shadow 0.3s ease 0.2s;
+	}
+.sidebar.closed {
+  right: 0;
+  top: -100%;
+	}
+#pagetop{
+display: none;
+	}
+#menu {
+display: none;
+	}
+.wizytowka {
+display: none;
+}
+a.button {
+right: 44%;
+}
+.div-first {
+margin-top: 0px;
+}
+.scrollToTop{
+	bottom: 10px;
+	right: 10px;
+}
+#kirp-phone {
+background-image: url('../img/kirplogo.png');
+background-size: 100% 100%;
+position: fixed;
+left: 0;
+top: 0;
+width: 50px;
+height: 49px;
+z-index: 105;
+}
+#pagetop-phone {
+	position: fixed;
+	top: 0px;
+	padding-left: 50px;
+	width:100%;
+	background: black;
+	padding-top: 0px;
+	height: 50px;
+	overflow:hidden;
+	z-index: 103;
+	border-bottom: 1px solid grey;
+}
+#pagetop-phone h3 {
+color: white;
+font-size: 20px;
+float: left;
+}
+#pagetitle-phone {
+margin-top: 12px;
+font-weight: bold;
+}
+.empty  {
+display: none;
+}
+}
+/*Only phone */
+@media (max-width: 544px) {
+.parallax {
+    /* The image used */
+    background-image: url('../img/parallaxphone.jpg');
+    }
+.wizytówka-sub {
+display: none;
+}
+#pagetop-phone h3 {
+font-size: 10px;
+}
+#pagetitle-phone {
+margin-top: 17px;
+}
+.img-hupajlo {
+display: none;
+}
+.text-div-1 {
+width: 100%;
+}
 }
