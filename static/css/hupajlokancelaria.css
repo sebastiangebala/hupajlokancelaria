@@ -190,7 +190,7 @@ i {
 .parallax {
     /* The image used */
     background-image: url('../img/parallax.jpg');
-
+	position: relative;
     /* Full height */
     height: 100%;
     width: 100%; 
@@ -461,9 +461,7 @@ display: none;
 /*Only phone */
 @media (max-width: 544px) {
 .parallax {
-    /* The image used */
     background-image: url('../img/parallaxphone.jpg');
-    background-size: max-content;
     }
 .wizytówka-sub {
 display: none;
