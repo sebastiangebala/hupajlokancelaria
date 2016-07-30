@@ -463,7 +463,7 @@ display: none;
 .parallax {
     /* The image used */
     background-image: url('../img/parallaxphone.jpg');
-    background-size: cover;
+    background-size: max-content;
     }
 .wizytówka-sub {
 display: none;
