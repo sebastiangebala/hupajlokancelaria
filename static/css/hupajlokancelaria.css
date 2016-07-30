@@ -1,6 +1,15 @@
 {
 border: 1px solid yellow;
 }
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 300;
+  line-height: 34px;
+}
 html,body{
 height: 100%;
 font-family: 'Open Sans';
@@ -445,9 +454,9 @@ display: none;
 }
 }
 /*Only phone */
-@media (max-width: 544px) {
+@media only screen and (max-width: 544px) {
 .parallax {
-    background-image: url('../img/parallaxphone.jpg');
+    background: url('../img/parallaxphone.jpg') no-repeat center center fixed;
     }
 .wizytówka-sub {
 display: none;
