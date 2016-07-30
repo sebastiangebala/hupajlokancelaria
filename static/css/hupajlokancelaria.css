@@ -387,6 +387,16 @@ display: none;
 }
 /*for Phone and Tablets*/
 @media (max-width: 768px) {
+.parallax {
+    -webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    }
 .sidebar {
   top: 0;
   height: 100%;
