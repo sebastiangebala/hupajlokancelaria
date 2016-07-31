@@ -212,9 +212,13 @@ font-size: 20px;
 text-shadow: 4px 4px 4px black;
 }
 .wizytowka i {
+font-size: 15px;
 color: white;
 font-weight: bold;
 text-shadow: 4px 4px 4px black;
+}
+.wizytowka-smaller {
+font-size: 15px;
 }
 #social {
 color: white;
