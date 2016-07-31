@@ -93,7 +93,7 @@ function yScroll(){
 		kirpphonesmall.style.width = "50px";
 		pagetitlephonesmall.style.fontSize = "10px";
 		pagetitlephonesmall.style.marginLeft = "-25px";
-		pagetitlephonesmall.style.marginTop = "-5px";
+		pagetitlephonesmall.style.marginTop = "5px";
 		trigger.style.fontSize = "35px";
 		trigger.style.marginTop = "5px";
 	} else {
