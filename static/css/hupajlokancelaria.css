@@ -502,7 +502,7 @@ float: left;
 /*Only phone */
 @media only screen and (max-width: 544px) {
 .parallax {
-    background: url('../img/parallaxphone2.jpg');
+    background: url('../img/parallaxphonesmall.jpg');
     -webkit-background-size: 100%; 
     -moz-background-size: 100%; 
     -o-background-size: 100%; 
