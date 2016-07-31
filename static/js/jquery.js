@@ -65,13 +65,17 @@ $(document).ready(function(){
 });
 
 // Shrinking nav
-var pagetop, menu, right, kirp, pagetitle, yPos;
+var pagetop, menu, right, kirp, pagetitle, pagetopphonesmall, kirpphonesmall, pagetitlephonesmall, trigger, yPos;
 function yScroll(){
 	pagetop = document.getElementById('pagetop');
 	menu = document.getElementById('menu');
 	right = document.getElementById('right');
 	kirp = document.getElementById('kirp');
 	pagetitle = document.getElementById('pagetitle');
+	pagetopphonesmall = document.getElementById('pagetopphonesmall');
+	kirpphonesmall = document.getElementById('kirpphonesmall');
+	pagetitlephonesmall = document.getElementById('pagetitlephonesmall');
+	trigger = document.getElementById('trigger');
 	yPos = window.pageYOffset;
 	if(yPos > 1){
 		pagetop.style.height = "50px";
@@ -84,6 +88,14 @@ function yScroll(){
 		pagetitle.style.fontSize = "10px";
 		pagetitle.style.marginLeft = "-50px";
 		pagetitle.style.marginTop = "-5px";
+		pagetopphonesmall.style.height = "50px";
+		kirpphonesmall.style.height = "49px";
+		kirpphonesmall.style.width = "50px";
+		pagetitlephonesmall.style.fontSize = "10px";
+		pagetitlephonesmall.style.marginLeft = "-25px";
+		pagetitlephonesmall.style.marginTop = "-5px";
+		trigger.style.fontSize = "35px";
+		trigger.style.marginTop = "5px";
 	} else {
 		pagetop.style.height = "100px";
 		pagetop.style.paddingTop = "0px";
@@ -95,9 +107,18 @@ function yScroll(){
 		pagetitle.style.fontSize = "23px";
 		pagetitle.style.marginLeft = "0px";
 		pagetitle.style.marginTop = "15px";
+		pagetopphonesmall.style.height = "75px";
+		kirpphonesmall.style.height = "74px";
+		kirpphonesmall.style.width = "75px";
+		pagetitlephonesmall.style.fontSize = "15px";
+		pagetitlephonesmall.style.marginLeft = "0px";
+		pagetitlephonesmall.style.marginTop = "5px";
+		trigger.style.fontSize = "50px";
+		trigger.style.marginTop = "12px";
 	}
 }
 window.addEventListener("scroll", yScroll);
+
 
 // Border-bottom for nav
 $(document).ready(function() {

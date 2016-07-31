@@ -384,6 +384,12 @@ text-decoration: none;
 #right {
 display: none;
 }
+#trigger {
+margin-top: 12px;
+top: 0px;
+font-size: 50px;
+transition: font-size 0.3s linear 0s, margin-top 0.3s linear 0s;
+}
 }
 /*for Phone and Tablets*/
 @media only screen and (max-width: 768px) {
@@ -429,6 +435,28 @@ margin-top: 0px;
 	bottom: 10px;
 	right: 10px;
 }
+.empty  {
+display: none;
+}
+.maps {
+pointer-events: none;
+}
+}
+/*small Tablets only*/
+@media (min-width: 545px) and (max-width: 768px) {
+#trigger {
+margin-top: 0px !important;
+top: 5px !important;
+font-size: 35px !important;
+}
+
+#pagetitle-phone {
+margin-top: 12px;
+font-weight: bold;
+}
+#pagetitlephonesmall {
+display: none;
+}
 #kirp-phone {
 background-image: url('../img/kirplogo.png');
 background-size: 100% 100%;
@@ -438,6 +466,9 @@ top: 0;
 width: 50px;
 height: 49px;
 z-index: 105;
+}
+#kirpphonesmall {
+display: none;
 }
 #pagetop-phone {
 	position: fixed;
@@ -451,20 +482,13 @@ z-index: 105;
 	z-index: 103;
 	border-bottom: 1px solid grey;
 }
+#pagetopphonesmall {
+display: none;
+}
 #pagetop-phone h3 {
 color: white;
 font-size: 20px;
 float: left;
-}
-#pagetitle-phone {
-margin-top: 12px;
-font-weight: bold;
-}
-.empty  {
-display: none;
-}
-.maps {
-pointer-events: none;
 }
 }
 /*Only phone */
@@ -483,11 +507,46 @@ pointer-events: none;
 .wizytówka-sub {
 display: none;
 }
-#pagetop-phone h3 {
-font-size: 10px;
+#pagetitlephonesmall {
+margin-top: 0px;
+font-weight: bold;
+transition: font-size 0.3s linear 0s, margin-left 0.3s linear 0s, margin-top 0.3s linear 0s;
 }
-#pagetitle-phone {
-margin-top: 17px;
+#kirpphonesmall {
+background-image: url('../img/kirplogo.png');
+background-size: 100% 100%;
+position: fixed;
+left: 0;
+top: 0;
+width: 75px;
+height: 74px;
+z-index: 105;
+transition: height 0.3s linear 0s, width 0.3s linear 0s;
+}
+#pagetopphonesmall {
+	position: fixed;
+	top: 0px;
+	padding-left: 75px;
+	width:100%;
+	background: black;
+	padding-top: 0px;
+	height: 75px;
+	overflow:hidden;
+	z-index: 103;
+	border-bottom: 1px solid grey;
+	transition: height 0.3s linear 0s;
+}
+#pagetopphonesmall h3 {
+padding-top: 5px;
+color: white;
+font-size: 15px;
+float: left;
+}
+#trigger {
+margin-top: 12px;
+top: 0px;
+font-size: 50px;
+transition: font-size 0.3s linear 0s, margin-top 0.3s linear 0s;
 }
 .img-hupajlo {
 display: none;
