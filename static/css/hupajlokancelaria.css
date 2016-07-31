@@ -508,7 +508,7 @@ float: left;
 display: none;
 }
 #pagetitlephonesmall {
-margin-top: 0px;
+margin-top: 5px;
 font-weight: bold;
 transition: font-size 0.3s linear 0s, margin-left 0.3s linear 0s, margin-top 0.3s linear 0s;
 }
