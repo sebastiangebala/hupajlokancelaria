@@ -78,9 +78,11 @@ text-decoration: none;
   margin: -5.5rem 1rem;
   font-size: 1.4em;
   text-align: right;
+  overflow: hidden;
 }
 .sidebar.closed {
   right: -260px;
+  overflow: hidden;
 }
 .sidebar h5 {
   text-align: center;
@@ -428,6 +430,9 @@ display: none;
 a.button {
 right: 44%;
 }
+.sectiontitle {
+border-radius: 0;
+}
 .div-first {
 margin-top: 0px;
 }
@@ -485,6 +490,9 @@ display: none;
 #pagetopphonesmall {
 display: none;
 }
+#pagetopphonesmall h3 {
+display: none;
+}
 #pagetop-phone h3 {
 color: white;
 font-size: 20px;
@@ -512,6 +520,9 @@ margin-top: 5px;
 font-weight: bold;
 transition: font-size 0.3s linear 0s, margin-left 0.3s linear 0s, margin-top 0.3s linear 0s;
 }
+#pagetitle-phone {
+display: none;
+}
 #kirpphonesmall {
 background-image: url('../img/kirplogo.png');
 background-size: 100% 100%;
@@ -522,6 +533,9 @@ width: 75px;
 height: 74px;
 z-index: 105;
 transition: height 0.3s linear 0s, width 0.3s linear 0s;
+}
+#kirp-phone {
+display: none;
 }
 #pagetopphonesmall {
 	position: fixed;
@@ -535,6 +549,9 @@ transition: height 0.3s linear 0s, width 0.3s linear 0s;
 	z-index: 103;
 	border-bottom: 1px solid grey;
 	transition: height 0.3s linear 0s;
+}
+#page-phone {
+display: none;
 }
 #pagetopphonesmall h3 {
 padding-top: 5px;
